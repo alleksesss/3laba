@@ -5,20 +5,20 @@ using namespace std;
 int l;
 int main()
 {
-    ifstream fin("file.txt");  // вывод данных из файлf
-    ofstream fout("file.txt"); // ввод данных в файл
+    ifstream fin("file.txt");  // РїРѕС‚РѕРє РІС‹РІРѕРґР° РёР· С„Р°Р№Р»Р°
+    ofstream fout("file.txt"); // РїРѕС‚РѕРє РІРІРѕРґР° РІ С„Р°Р№Р»
     string b;
     float x, y;
     l=0;
     for (int x = -10; x < 8; x++){
         l++;
-        if (x >= -10 && x < -6) // 1 диапазон значений
+        if (x >= -10 && x < -6) // 1 Г¤ГЁГ ГЇГ Г§Г®Г­ Г§Г­Г Г·ГҐГ­ГЁГ©
             y = sqrt(4 - pow((x + 8), 2)) - 2;
-        else if (x < 2) // 2 диапазон значений
+        else if (x < 2) // 2 Г¤ГЁГ ГЇГ Г§Г®Г­ Г§Г­Г Г·ГҐГ­ГЁГ©
             y = 0.5 * x + 1;
-        else if (x < 6) // 3 диапазон значений
+        else if (x < 6) // 3 Г¤ГЁГ ГЇГ Г§Г®Г­ Г§Г­Г Г·ГҐГ­ГЁГ©
             y = 0;
-        else if (x <= 8) // 4 диапазон значений
+        else if (x <= 8) // 4 Г¤ГЁГ ГЇГ Г§Г®Г­ Г§Г­Г Г·ГҐГ­ГЁГ©
             y = pow((x - 6), 2);
         fout << y << endl;}
     fout.close();
@@ -29,5 +29,5 @@ int main()
         l++; }
     for (int i = 0; i < l; i++)
         cout << data[i] << "\n";
-    fin.close(); // закрываем файл
+    fin.close(); // Г§Г ГЄГ°Г»ГўГ ГҐГ¬ ГґГ Г©Г«
 }
